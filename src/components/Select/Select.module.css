@@ -1,0 +1,25 @@
+.selectGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.selectGroup__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.selectGroup__field {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  appearance: auto;
+}
+.selectGroup__field:focus {
+  border-color: #1e3c72;
+  outline: none;
+}

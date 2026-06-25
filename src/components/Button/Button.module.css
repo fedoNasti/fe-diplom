@@ -1,0 +1,36 @@
+.button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.button--primary {
+  background-color: #1e3c72;
+  color: #fff;
+}
+.button--primary:hover {
+  background-color: #2a5298;
+}
+.button--primary:active {
+  background-color: #0f2647;
+}
+
+.button--secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.button--secondary:hover {
+  background-color: #ccc;
+}
+.button--secondary:active {
+  background-color: #b3b3b3;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
