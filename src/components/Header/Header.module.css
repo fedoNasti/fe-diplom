@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+}
+
+.headerHome {
+  background-image: url('../../assets/images/homePage-header.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  padding: 20px 0;
+}
+
+.headerDefault {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Для главной страницы — лого и навигация в одной строке сверху */
+.headerHome .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerHome .container > *:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Для остальных страниц — всё в строку */
+.headerDefault .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerDefault {
+  background-image: url('../../assets/images/otherPage-header.png');
+}

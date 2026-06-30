@@ -1,0 +1,163 @@
+/* src/components/Footer/Footer.module.css */
+
+.footer {
+  background-color: #2D2B2F; /* можно заменить на цвет из макета */
+  color: #ffffff;
+  padding: 40px 0 20px;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Контейнер для двух колонок */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* расстояние между блоками подписки и соцсетей */
+}
+
+/* Заголовки колонок */
+.columnTitle {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* ===== Контакты ===== */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 250px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+
+.contactList a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactList a:hover {
+  text-decoration: underline;
+}
+
+.contactIcon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+/* ===== Подписка ===== */
+.subscribeText {
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.subscribeInput {
+  flex: 1;
+  min-width: 180px;
+  max-width: 447px;
+  padding: 8px 12px;
+  border: none;
+  /* border-radius: 4px; */
+  font-size: 14px;
+}
+
+.subscribeButton {
+  background-color: #2D2B2F; /* основной цвет бренда */
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 10px;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  /* font-weight: 600; */
+  /* transition: background 0.2s; */
+}
+
+.subscribeButton:hover {
+  background-color: #e06f00;
+}
+
+.subscribeButton:active {
+  transform: scale(0.97);
+}
+
+/* ===== Соцсети ===== */
+.socialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: inline-block;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.socialLink:hover {
+  background-color: #777;
+}
+
+.socialIcon {
+  width: auto;
+  height: 30px;
+  display: block;
+  fill: #ffffff;          /* или цвет, который нужен по макету */
+  transition: fill 0.2s;
+}
+
+/* ===== Нижняя строка ===== */
+.bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.logo {
+  font-weight: 700;
+  color: #fff;
+}
+
+.copyright {
+  color: #aaa;
+}

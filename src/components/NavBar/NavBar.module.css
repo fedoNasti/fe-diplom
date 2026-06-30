@@ -1,0 +1,14 @@
+.container {
+  width: 100vw;
+  height: 94px;
+  background-color: rgba(41, 41, 41, 0.8);
+}
+
+.navList {
+  display: flex;
+  gap: 50px;
+  padding: 0 250px;
+  align-items: center;
+  color: #fff;
+  list-style-type: none;
+}

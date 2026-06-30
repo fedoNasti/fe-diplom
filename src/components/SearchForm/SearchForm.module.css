@@ -1,37 +1,96 @@
-.homePage {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+/* Общие стили */
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-.homePage__title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #1e3c72;
+.wrapperHome {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.wrapperContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  gap: 20px;
+  background: rgba(41, 41, 41, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.columnLeft {
+  flex: 1;
+}
+
+.columnRight {
+  flex: 1;
+}
+
+.columnRightHome {
+  flex: 1;
+}
+
+.columnRightContent {
+  flex: 3;
+}
+
+.title {
+  font-size: 42px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .searchForm {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 16px;
+  width: 100%;
 }
 
-.searchForm__row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+/* Для главной */
+.wrapperHome .searchForm {
+  background: rgba(41, 41, 41, 0.8);
+  backdrop-filter: blur(4px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
-.searchForm__row > * {
+
+/* Для компактного */
+.wrapperContent .searchForm {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.rowHome > * {
   flex: 1;
-  min-width: 180px;
 }
 
-.searchForm__actions {
+.rowCompact > * {
+  flex: 1;
+  min-width: 150px;
+}
+
+.actions {
   display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
+}
+
+.actionsHome {
+  justify-content: flex-end;
+}
+
+.actionsContent {
+  justify-content: flex-end;
+  margin-top: 4px;
 }

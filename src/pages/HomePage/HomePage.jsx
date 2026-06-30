@@ -1,10 +1,13 @@
-import Layout from "../../layouts/Layout";
+import AboutUs from '../../components/AboutUs/AboutUs';
+import HowItWorks from '../../components/HowItWorks/HowItWorks';
+import styles from './HomePage.module.css'
 
 function HomePage() {
   return (
-    <>
-      <h1>Home Page</h1>
-    </>
+    <div>
+      <AboutUs />
+      <HowItWorks />
+    </div>
   )
 }
 
